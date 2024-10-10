@@ -26,6 +26,10 @@ body {
     border-radius: 5px;
     background: rgb(248, 255, 185);
 }
+
+.hero h4{
+    color: rgb(203, 91, 43);
+}
 .memes {
     display: flex;
     justify-content: center;
@@ -78,8 +82,10 @@ section {
     margin: 10px;
 }
 
-footer {
+.footer {
+    color: rgb(103, 67, 20);
     margin-top: 20px;
     padding: 10px;
     background-color: #f0f0f0;
+    text-align: center;
 }
