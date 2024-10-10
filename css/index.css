@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffcc00;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden; /* Ensures no content overflows */
+    box-sizing: content-box;
+}
+.title{
+    padding: 1rem;
+    border-radius: 5px;
+    background: rgb(248, 255, 185);
+}
+.memes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px; /* Space between memes */
+    margin-top: 20px;
+}
+
+.meme {
+    width: 45%; /* Each meme takes about 45% of the available space */
+    max-width: 300px; /* Ensure memes don’t get too large */
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto; /* Let header height adjust based on content */
+        padding: 20px;
+    }
+
+    .meme {
+        width: 80%; /* Make meme images smaller on mobile devices */
+        max-width: 100%;
+    }
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#video iframe {
+    width: 100%;
+    height: 315px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 150px; /* Adjust as needed */
+    margin: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
